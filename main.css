@@ -525,7 +525,7 @@ section{
 }
 .header{
    position: fixed;
-   height: 40px;
+   height: 60px;
    width: 100vw;
    padding:0rem;
    display: flex;
