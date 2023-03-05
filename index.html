@@ -22,11 +22,9 @@
 </head>
 <body>
 
-<!-- header section starts  -->
+<!-- ===========header section starts========  -->
 
 <header class="header">
-
-   <div id="menu-btn" class="fas fa-bars"></div>
 
    <a href="portfolio-dp.jpg" class="logo"><img src="portfolio-dp1.jpg" alt=""></a>
 
@@ -40,8 +38,6 @@
    </nav>
 
    <div class="follow">
-      <!-- <a href="#" class="fab fa-twitter"></a> -->
-      <!-- <a href="https://www.snapchat.com/add/sekharp06?share_id=5pLs8CAPMDY&locale=en-IN" class="fab fa-snapchat"></a> -->
       <a href="https://www.instagram.com/_._.sekhar._._/" class="fab fa-instagram"></a>
       <a href="https://www.linkedin.com/in/sudhansu-sekhar-behera-972210249/" class="fab fa-linkedin"></a>
       <a href="https://github.com/skehargit" class="fab fa-github"></a>
@@ -49,23 +45,16 @@
 
 </header>
 
-<!-- header section ends -->
+<!-- ==========header section ends========= -->
 
-<!-- home section starts  -->
-
-<!-- <div class="colors">
-   <span id="blue" class="blue"></span>
-   <span id="green"  class="green"></span>
-</div> -->
-
+<!-- ==============home section starts===========  -->
 
 <section class="home" id="home">
-   <!-- <img class="about-img" src="" alt=""> -->
+   <a href="portfolio-dp.jpg" class="Aboutlogo"><img src="portfolio-dp1.jpg" alt=""></a>
    <h1 class="heading" id="about-top" data-aos="fade-up"> <span>ABOUT</span> </h1>
    
-
+    
    <div data-aos="fade-up" class="content">
-      
       <ul data-aos="fade-up"class="dynamic-text">
          <li>
             <h4 data-aos="fade-up">Hi, I am a</h4>
@@ -87,9 +76,9 @@
 
 </section>
 
-<!-- home section ends -->
+<!-- ===============home section ends=========== -->
 
-<!-- skills section starts  -->
+<!-- ==============skills section starts=========  -->
 
 <section class="skills" id="skills">
 
@@ -114,10 +103,14 @@
          <p>NODE js</p>
       </div>
       
-      <!-- <div class="box" data-aos="zoom-in">
-         <img src="https://img.icons8.com/color/480/000000/java-coffee-cup-logo--v1.png" alt="">
-         <p>JAVA</p>
-      </div> -->
+      <div class="box" data-aos="zoom-in">
+         <img src="https://img.icons8.com/fluency/48/null/c-plus-plus-logo.png"/>
+         <p>C++</p>
+      </div>
+      <div class="box" data-aos="zoom-in">
+         <img src="https://img.icons8.com/color/48/null/python--v1.png"/>
+         <p>PYTHON</p>
+      </div>
       <div class="box" data-aos="zoom-in">
          <img src="https://img.icons8.com/color/480/000000/git.png" alt="">
          <p>GIT</p>
@@ -146,14 +139,6 @@
          <img src="https://img.icons8.com/color-glass/512/sql.png" alt="">
          <p>SQL</p>
       </div>
-      <!-- <div class="box" data-aos="zoom-in">
-         <img src="https://img.icons8.com/fluency/240/000000/javascript.png" alt="">
-         <p>JAVASCRIPT</p>
-      </div> -->
-      <!-- <div class="box" data-aos="zoom-in">
-         <img src="https://img.icons8.com/fluency/240/000000/node-js.png" alt="">
-         <p>NODE js</p>
-      </div> -->
       
 
       
@@ -162,9 +147,9 @@
 
 </section>
 
-<!-- skills section ends -->
+<!-- ==========skills section ends============ -->
 
-<!-- project section starts  -->
+<!-- ===============project section starts==============  -->
 
 <section class="project" id="project">
    <h1 class="heading" data-aos="fade-up"> <span>My Projects</span> </h1>
@@ -224,9 +209,9 @@
 		</div>
 	</section>
 
-<!-- project section ends -->
+<!-- ===========project section ends============== -->
 
-<!-- interest section strat -->
+<!-- =============interest section strat================= -->
 
 <section  class="interest" id="interest">
       <h1 class="heading" data-aos="fade-up"> <span>INTEREST</span> </h1>
@@ -277,9 +262,9 @@
             </div>
 </section>
 
-<!-- interest section end -->
+<!-- ==============interest section end============== -->
 
-<!-- contact section starts  -->
+<!-- ================contact section starts===============  -->
 
    <section  class="contact" id="contact">
 
@@ -301,22 +286,19 @@
                         </span>
                       <p data-aos="fade-right">+91-9078078242</p>
                   </div>
-                  <img data-aos="fade-right" src="https://way2up.am/images/contact-us.png" alt="">
+                  <div class="follow2" data-aos="fade-left">
+                     <a href="https://www.linkedin.com/in/sudhansu-sekhar-behera-972210249/" class="fab fa-linkedin" ></a>
+                     <a href="https://github.com/skehargit" class="fab fa-github" ></a>
+                  </div>
+                  
                   
               </div>
-              <form class="contact-box" onsubmit="sendEmail();reset();return false;" >   
-                      <div class="feedback-text" data-aos="fade-left">Feedback</div> 
-                      <input data-aos="fade-right" name="name" type="text" id="name" class="feedback-input" placeholder="Name" />   
-                      <input data-aos="fade-left" name="email" type="email" id="email" class="feedback-input" placeholder="Email" />
-                      <!-- <input data-aos="fade-left" name="email" type="text" id="phone" class="feedback-input" placeholder="phone no." /> -->
-                      <textarea data-aos="fade-right" name="text" id="message"  class="feedback-input" placeholder="Comment"></textarea>
-                      <input data-aos="fade-left" type="submit" value="SUBMIT"/>
-              </form>
+            <img data-aos="fade-right" src="https://way2up.am/images/contact-us.png" alt="">
           </div>
   
   </section>
 
-<!-- contact section ends -->
+<!-- ============contact section ends============== -->
 
     <section class="credit-box">
       <div class="credit" > &copy; <span>Sudhansu Sekhar Behera</span> </div>
@@ -340,39 +322,6 @@
             }
         }, 5000);
       //   imgslideend
-      let menu = document.querySelector('#menu-btn');
-let header = document.querySelector('.header');
-
-menu.onclick = () =>{
-   menu.classList.toggle('fa-times');
-   header.classList.toggle('active');
-   document.body.classList.toggle('active');
-}
-
-window.onscroll = () =>{
-   if(window.innerWidth < 991){
-      menu.classList.remove('fa-times');
-      header.classList.remove('active');
-      document.body.classList.remove('active');
-   }
-
-   document.querySelectorAll('section').forEach(sec =>{
-
-      let top = window.scrollY;
-      let offset = sec.offsetTop - 150;
-      let height = sec.offsetHeight;
-      let id = sec.getAttribute('id');
-
-      if(top >= offset && top < offset + height){
-         document.querySelectorAll('.header .navbar a').forEach(links =>{
-            links.classList.remove('active');
-            document.querySelector('.header .navbar a[href*='+ id +']').classList.add('active')
-         });
-      };
-
-   });
-
-}
 
    AOS.init({
       duration:800,
@@ -380,33 +329,7 @@ window.onscroll = () =>{
    });
 
 </script>
-<!-- contact form---------- -->
-<script src="https://smtpjs.com/v3/smtp.js">
 
-   
-</script>
-
-<script>
-   function sendEmail(){
-      Email.send({
-      Host : "smtp.elasticemail.com",
-      Username : "username",
-      Password : "password",
-      To : 'sudhansusekharweb@gmail.com',
-      From : document.getElementById("email").value,
-      Subject : "New Contact form qnquiry",
-      Body : "Name: "+document.getElementById("name").value
-      + "<br> Email: "+document.getElementById("email").value
-      +"<br> Message: "+document.getElementById("message").value
-}).then(
-  message => alert("Messsage Sent Succesfully")
-);
-
-
-
-   }
-
-</script>
 
 
    

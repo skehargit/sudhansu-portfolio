@@ -7,14 +7,7 @@
 	--text-color: #fff;
 	--main-color: rgb(8, 112, 48);
 	--second-color: blue;
-	/* --other-color: #12141c; */
    
-}
-.dark-theme{
-   /* --bg-color: rgb(228, 228, 228);
-   --text-color: rgb(0, 0, 0); */
-     --main-color: rgb(42, 199, 242);
-	--second-color: rgb(8, 112, 48);
 }
 *{
    font-family: 'Source Sans Pro', sans-serif;
@@ -100,6 +93,13 @@ section{
    border-radius: 100px;
    border: 3px solid rgb(255, 255, 255);
 }
+.home .Aboutlogo img{
+   display: none;
+   width: 200px;
+   height: 200px;
+   border-radius: 100px;
+   border: 3px solid rgb(255, 255, 255);
+}
 
 .header .navbar{
    width: 100%;
@@ -136,33 +136,6 @@ section{
 .header.active{
    left: 0;
 }
-/* ======== color changing ======== */
-
-.colors{
-  /* width: 30px;
-  background: blue;
-   border-radius: 20px; */
-   /* width: 50px;
-   height: 50px; */
-   display: flex;
-   position: fixed;
-   z-index: 1000;
-   flex-direction: column;
-   /* overflow: hidden; */
-}
-.colors span{
-   width: 30px;
-   height: 30px;
-   background: rgb(65, 65, 219);
-   border-radius: 20px;
-   padding: 10px;
-   margin-left: 97vw ;
-   margin-top: 3vh;
-}
-#green{
-   background: var(--main-color);
-}
-
  /* =============home============ */
 .home{
    display: flex;
@@ -257,7 +230,7 @@ section{
    padding:2rem 1rem;
    border: 1px solid var(--main-color);
    border-radius: 10px;
-   transition: all .40s ease;
+   transition: all .30s ease;
 }
 
 .skills .box-container .box img{
@@ -267,7 +240,7 @@ section{
 
 .skills .box-container .box p{
    font-size: 1.8rem;
-   transition: all .40s ease;
+   transition: all .30s ease;
 }
 
 .skills .box-container .box:hover{
@@ -302,7 +275,7 @@ section{
 	padding: 25px;
    background: rgba(1, 32, 13, 0.484);
 	border-radius: 0.5rem;
-	transition: all .40s ease;
+	transition: all .30s ease;
 }
 .main-row{
 	display: flex;
@@ -481,6 +454,9 @@ section{
             justify-content: center;
             color: #ffffff;
         }
+        .contact .box-container img{
+         width: 300px;
+        }
         .feedback-text{
             margin-bottom: 20px;
             font-size: 20px;
@@ -488,50 +464,6 @@ section{
             font-weight: 700;
             border-bottom: 2px solid var(--main-color);
         }
-        .feedback-input {
-            color:white;
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            border-radius: 20px;
-            line-height: 22px;
-            background-color: transparent;
-            border:2px solid var(--main-color);
-            transition: all 0.3s;
-            padding: 13px;
-            margin-bottom: 15px;
-            width:100%;
-            box-sizing: border-box;
-            outline:0;
-}
-
-.feedback-input:focus {
-     border:2px solid var(--main-color);
-}
-
-textarea {
-  height: 200px;
-  line-height: 150%;
-  resize:vertical;
-}
-
-[type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
-  background:var(--main-color);
-  border-radius:20px;
-  border:none;
-  cursor:pointer;
-  color:white;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
-  transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
-}
-.contact-box img{
-    width: 320px;
-}
 .contact-box p{
    font-size: 2rem;
 }
@@ -540,6 +472,11 @@ textarea {
     align-items: center;
     justify-content: center;
     padding: 5px;
+}
+.follow2 a{
+   font-size: 3rem;
+   margin:0 1rem;
+   cursor: pointer;
 }
 
 .credit-box{
@@ -552,22 +489,19 @@ textarea {
    align-items: center;
    justify-content: center;
    background-color: var(--main-color);
-   padding:1rem;
-   font-size: 2rem;
-   color:black;
+   padding: 0.5em;
+   font-size: 1.5rem;
+   color: white;
 }
 
 .credit span{
    color: rgb(255, 255, 255);
+   margin-left: 10px;
 }
 
      /* =========== media queries ========== */
 
-@media (min-width:991px){
-   #menu-btn{
-   display: none;
-}
-}
+
 
 @media (max-width:991px){
 
@@ -578,15 +512,8 @@ textarea {
    body.active{
       padding-left: 0;
    }
-   #menu-btn{
-   position: absolute;
-   top:0.5rem; right:-5.5rem;
-   height: 4.5rem;
-   line-height: 4.5rem;
-   width: 5rem;
-   font-size: 2.5rem;
-   cursor: pointer;
-   border-radius: 5px;
+   .home .Aboutlogo img{
+      display: block;
    }
   
 
@@ -594,7 +521,38 @@ textarea {
 
 .header{
    position: fixed;
-   top:0; left:-30rem;
+   bottom: 0;
+}
+.header{
+   position: fixed;
+   height: 40px;
+   width: 100vw;
+   padding:0rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.header .logo img{
+   display: none;
+}
+.header .navbar{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.header .navbar a{
+   display: block;
+   font-size: 2rem;
+   padding:0rem;
+   margin:0rem;
+}
+
+
+.header .follow a{
+   display: none;
 }
 
 section{
@@ -644,10 +602,6 @@ section{
 
    html{
       font-size: 50%;
-   }
-
-   #menu-btn.fa-times{
-      right:0;
    }
 
    
