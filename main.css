@@ -523,8 +523,12 @@ section{
    border: 2px solid var(--main-color);
    border-top: none;
    border-bottom: none;
-   
 
+}
+#go-top:hover{
+   border: 2px solid var(--main-color);
+   border-right: none;
+   border-left: none;
 }
 #go-top .top{
    height: 25px;
@@ -539,6 +543,9 @@ section{
 }
 #go-top .top:hover{
    background-color: transparent;
+   border: 2px solid var(--main-color);
+   border-top: none;
+   border-bottom: none;
 }
 
 
