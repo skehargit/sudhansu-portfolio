@@ -254,7 +254,9 @@ section{
 .home .content p{
    font-size: 1.9rem;
    padding:1rem 0;
-   color: rgba(255, 255, 255, 0.735);
+   color: rgba(255, 255, 255, 0.84);
+   letter-spacing: 1px;
+   font-weight: 100;
 }
 
 .edutation{
@@ -263,7 +265,8 @@ section{
 }
 
 .edutation ul li{
-   color: rgba(255, 255, 255, 0.735);
+   color: rgba(255, 255, 255, 0.84);
+   letter-spacing: 1px;
 }
 /* =============skills============= */
 
