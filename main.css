@@ -92,19 +92,62 @@ section{
    z-index: 1000;
 }
 
+.header .logo{
+   width: 230px;
+   height: 230px;
+   border-radius: 100%;
+   border-left: 2px solid var(--main-color);
+   border-right: 2px solid rgb(255, 106, 0);
+   border-top: 2px solid white;
+   border-bottom: 2px solid white;
+   animation: rotation 5s linear infinite;
+}
 .header .logo img{
-   width: 200px;
-   height: 200px;
-   border-radius: 100px;
+   position: relative;
+   top:5%;
+   width: 90%;
+   height: 90%;
+   border-radius: 100%;
    border: 3px solid rgb(255, 255, 255);
+   animation: rotation2 5s linear infinite reverse;
+}
+.home .Aboutlogo{
+   display: none;
+
+   width: 230px;
+   height: 230px;
+   border-radius: 100%;
+   border-left: 2px solid var(--main-color);
+   border-right: 2px solid rgb(255, 106, 0);
+   border-top: 2px solid white;
+   border-bottom: 2px solid white;
+   animation: rotation 5s linear infinite;
+}
+@keyframes rotation {
+   100%{
+      transform: rotate(360deg);
+   }
+}
+.home .Aboutlogo img:hover{
+   /* change photo */
 }
 .home .Aboutlogo img{
    display: none;
-   width: 200px;
-   height: 200px;
-   border-radius: 100px;
+   position: relative;
+   top: 5%;
+   left: 5%;
+   width: 90%;
+   height: 90%;
+   border-radius: 100%;
    border: 3px solid rgb(255, 255, 255);
+   animation: rotation2 5s linear infinite reverse;
 }
+@keyframes rotation2 {
+   100%{
+      transform: rotate(360deg);
+   }
+}
+
 
 .header .navbar{
    width: 100%;
@@ -562,7 +605,16 @@ section{
    body.active{
       padding-left: 0;
    }
+   .header .logo{
+      display: none;
+   }
+   .home .Aboutlogo{
+      display: block;
+   }
    .home .Aboutlogo img{
+      display: block;
+   }
+   .home .Aboutlogo .wheel{
       display: block;
    }
   
