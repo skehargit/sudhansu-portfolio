@@ -339,6 +339,16 @@ section{
 	gap: 2rem;
 	margin-top: 3rem;
 }
+.tools{
+   display: flex;
+   align-items: center;
+   padding: 0 20px;
+
+}
+.tools i{
+   padding-left: 10px;
+   font-size: 25px;
+}
 .row img{
 	height: auto;
 	width: 100%;
@@ -355,6 +365,11 @@ section{
 	display: flex;
 	margin-bottom: 1rem;
 }
+.row-text{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
 .row h3{
 	font-size: 25px;
 	font-weight: 700;
@@ -370,6 +385,21 @@ section{
 .row:hover{
 	transform: scale(1.04) translateY(-5px);
 	cursor: pointer;
+}
+.row .linkButton{
+   display: flex;
+   align-items: center;
+
+}
+.row .linkButton button{
+   font-family: 'Mukta', sans-serif;
+   letter-spacing: 2px;
+   border-radius: 5px;
+   background: transparent;
+   border: 2px solid rgb(8, 112, 48);
+ color: white;
+ padding: 5px;
+ margin: 5px 10px 0 0;
 }
 /* =============interest============= */
 
