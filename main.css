@@ -209,13 +209,12 @@ section{
    flex-direction: column;
    text-align: left;
    justify-content: center;
-   flex-wrap: wrap;
    gap:2rem;
    min-height: 90vh;
 }
 
 .home .content{
-   width: 60vw;
+   width: 70vw;
 }
 
 .home .content h3{
