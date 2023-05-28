@@ -55,6 +55,13 @@ body{
    transition: .2s linear !important;
    background-color: var(--bg-color);
 }
+/* #hVideo{
+   position: absolute;
+   z-index: -1000;
+   opacity: 0.5;
+   height: 100vh;
+   top: 0;
+} */
 
 section{
    padding:3rem 2rem;
@@ -111,6 +118,7 @@ section{
    transition: .2s linear !important;
    text-align: center;
    z-index: 1000;
+   overflow: hidden;
    
 }
 .wheel{
