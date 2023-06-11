@@ -122,17 +122,6 @@ section{
    overflow: hidden;
    
 }
-/* .time{
-   border: 1px solid rgb(255, 255, 255);
-   z-index: 1000;
-   box-shadow: 0 0 5px white ;
-   position: absolute;
-   top: 27%;
-   right: 20%;
-   padding: 10px;
-   border-radius: 5px;
-   background-color: #01900161;
-} */
 .wheel{
    border-left: 2px solid transparent;
    border-right: 2px solid transparent;
@@ -165,9 +154,6 @@ section{
    100%{
       transform: rotate(360deg);
    }
-}
-.home .Aboutlogo img:hover{
-   /* change photo */
 }
 .home .Aboutlogo img{
    display: none;
