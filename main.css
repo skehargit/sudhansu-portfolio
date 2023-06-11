@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Dirt&display=swap');
 
-      @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');     
+      @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');  
+  @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');   
       
 /* width */
 ::-webkit-scrollbar {
@@ -121,6 +122,17 @@ section{
    overflow: hidden;
    
 }
+/* .time{
+   border: 1px solid rgb(255, 255, 255);
+   z-index: 1000;
+   box-shadow: 0 0 5px white ;
+   position: absolute;
+   top: 27%;
+   right: 20%;
+   padding: 10px;
+   border-radius: 5px;
+   background-color: #01900161;
+} */
 .wheel{
    border-left: 2px solid transparent;
    border-right: 2px solid transparent;
@@ -306,7 +318,7 @@ section{
    padding:2rem 1rem;
    border: 1px solid var(--main-color);
    border-radius: 10px;
-   transition: all .30s ease;
+   transition: all .10s ease;
 }
 
 .skills .box-container .box img{
@@ -319,14 +331,14 @@ section{
    margin-bottom: 2rem;
    border: 1px solid var(--main-color);
    border-radius: 10px;
-   transition: all .50s ease;
+   transition: all .30s ease;
 }
 #MERN img{
    width: 30rem;
-   /* transition: all .30s ease; */
+   transition: all .10s ease;
 }
 #MERN img:hover{
-   transform: scale(1.04) translateY(-5px);
+   transform: scale(1.04) ;
 }
 #MERN:hover{
    
@@ -340,11 +352,11 @@ section{
 
 .skills .box-container .box p{
    font-size: 1.8rem;
-   transition: all .30s ease;
+   /* transition: all .30s ease; */
 }
 
 .skills .box-container .box:hover{
-   transform: scale(1.04) translateY(-5px);
+   transform: scale(1.04) ;
    cursor: pointer;
    box-shadow:  0 0 1px var(--main-color) ,
                 0 0 2px var(--main-color),
@@ -409,7 +421,7 @@ section{
 	letter-spacing: 1.5px;
 }
 .row:hover{
-	transform: scale(1.04) translateY(-5px);
+	transform: scale(1.04) ;
 	cursor: pointer;
 }
 .row .linkButton{
@@ -548,17 +560,18 @@ section{
    color: #ffffff;
    display: flex;
    flex-direction: column;
-   align-items: center;
-   justify-content: center;
+   /* align-items: center; */
+   /* justify-content: center; */
 }
 
 .interest-text span{
    color: rgb(255, 255, 255);
    padding: 10px 10px 5px 10px;
+   font-family: 'Tilt Prism', cursive;
    border-bottom: 2px solid var(--main-color);
    /* border-right: 2px solid red; */
    border-radius: 10px 20px 5px ;
-   font-size: 2rem;
+   font-size: 4rem;
 }
 
 .interest-text p{
@@ -765,6 +778,10 @@ section{
    .contact .box-container{
       width: 700px;
    }
+   
+   
+}
+@media (max-width:640px){
    .interest{
       display: flex;
       flex-direction: column;
