@@ -72,23 +72,36 @@
      <h3 data-aos="fade-up">My Name is Sudhansu Sekhar Behera</h3>
      <span data-aos="fade-up" class="about-text">SUMMARY</span>
       <p data-aos="fade-up">As a fresh developer, I possess the skills and dedication to complete any project I work on. I am eager to take on new challenges and opportunities in the field and am actively seeking a role where I can apply my skills and grow as a professional. </p>
-      <span data-aos="fade-up" class="edutation-text">EDUTATION</span>
-      <div class="edutation" data-aos="fade-up">
-         <ul >
-            <li><b>Bachelor of Technology</b>  in Mechanical Engineering from Vignan Institute of Technology And  Management (2022-2025).</li>
-            <br>
-            <li><b>Diploma</b>  in Mechanical Engineering from Aum Sai Institute of Technical Edutation (2019-2022).</li>
-            <br>
-            <li> Complete Web Development (Udemy).</li>
-         </ul>
-      </div>
-      <a data-aos="fade-up" href="_blank" class="btn">MY RESUME</a>
+      
+      <a data-aos="fade-up" href="_blank" data-aos="fade-left" class="btn" id="resume">MY RESUME</a>
    </div>
 
 </section>
 
 <!-- ===============home section ends=========== -->
 
+<section class="education" id="edution">
+
+   <h1 class="heading" data-aos="fade-up"> <span>EDUCATION</span> </h1>
+   <div data-aos="fade-up" class="box-container">
+      <div class="box" data-aos="zoom-in">
+         <img src="https://img.icons8.com/color/480/000000/html-5--v1.png"/>
+         <h3>Bachelor of Technology</h3>
+         <p>Mechanical Engineering from Vignan Institute of Technology And  Management (2022-2025).</p>
+      </div>
+      <div class="box" data-aos="zoom-in">
+         <img src="https://img.icons8.com/color/480/000000/css3.png" alt="">
+         <h3>Diploma</h3>
+         <p>Mechanical Engineering from Aum Sai Institute of Technical Edutation (2019-2022).</p>
+      </div>
+      <div class="box" data-aos="zoom-in">
+         <img src="https://img.icons8.com/fluency/240/000000/javascript.png" alt="">
+         <h3>Full-Stack Development</h3>
+         <p> Complete Web Development (Udemy).</p>
+      </div>
+   </div>
+
+</section>
 <!-- ==============skills section starts=========  -->
 
 <section class="skills" id="skills">
@@ -286,7 +299,7 @@
 <section  class="interest" id="interest">
       <h1 class="heading" data-aos="fade-up"> <span>INTEREST</span> </h1>
           <div  class="interest-container">
-              <div data-aos="fade-up" class="img-slider">
+              <!-- <div data-aos="fade-up" class="img-slider">
                       <div class="slider">
                          <div class="slides">
                              <input type="radio" name="radio-btn" id="radio1">
@@ -321,7 +334,7 @@
                          </div>
                    </div>
                 
-              </div>
+              </div> -->
               <div  class="interest-text">
                   <span data-aos="fade-left">PHOTO EDITING</span>
                   <span data-aos="fade-right">WEB DESIGN</span>
@@ -338,10 +351,25 @@
    <section  class="contact" id="contact">
 
       <h1 class="heading" data-aos="fade-up"> <span>CONTACT ME</span> </h1>
-          <div class="box-container" >
-              <div class="contact-box" >
+          <div class="box-container" data-aos="fade-up" >
+              <div class="contact-box" data-aos="fade-up" >
+               <div class="scanner">
+                  <div class="Scanner-logo" data-aos="fade-left">
+                     <!-- <img src="portfolio-dp1.jpg" alt=""> -->
+                  </div>
+                  <div class="scanner_name" data-aos="fade-right">
+                     Sudhansu Sekhar Behera
+                     <div id="scanner_name_p">
+                        developer
+                     </div>
+                  </div>
+                  
+                  <div class="scanner-img" data-aos="fade-left">
+                     <img src="" alt="">
+                  </div>
+               </div>
                
-               <div class="feedback-text" data-aos="fade-right">Let's get in touch</div>
+               <div class="social-link">
                   <div class="social-media" >
                      <span data-aos="fade-left" class="material-symbols-outlined" style="color: rgb(8, 112, 48);">
                         mail
@@ -359,14 +387,16 @@
                      <a href="https://www.linkedin.com/in/sudhansu-sekhar-behera-972210249/" class="fab fa-linkedin" ></a>
                      <a href="https://github.com/skehargit" class="fab fa-github" ></a>
                   </div>
+               </div>
                   
                   
               </div>
-              <img data-aos="fade-right" src="./img/contact-us.png" alt="" class="aos-init aos-animate">
+              
             
               
               
           </div>
+          
   
   </section>
   <a href="#home" id="go-top">
@@ -404,6 +434,14 @@
       delay:300
    });
 
+</script>
+<script>
+   document.querySelector('#contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.target.elements.name.value = '';
+    e.target.elements.email.value = '';
+    e.target.elements.message.value = '';
+  });
 </script>
 
 
