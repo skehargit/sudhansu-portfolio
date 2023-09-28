@@ -300,13 +300,13 @@ section{
 .education .box-container .box{
    padding:2rem 1rem;
    border-radius: 10px;
-   
+   /* height: 150px; */
    background-color: rgba(1, 32, 13, 0.484);
    transition: all .30s ease;
 }
 .education .box-container .box img{
    margin-bottom: 1rem;
-   width: 3rem;
+   width: 5rem;
 }
 .education .box-container .box h3{
    font-size:2rem;
