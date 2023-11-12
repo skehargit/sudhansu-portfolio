@@ -5,7 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Sudhansu l Portfolio</title>
-   <link rel="icon" href="https://assets.stickpng.com/images/5a5798369538462e5a82d42b.png">
+   <link rel="icon" href="slogo.png">
 
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
@@ -21,7 +21,7 @@
 
 </head>
 <body>
-
+<div class="cursor"></div>
 <!-- ===========header section starts========  -->
 
 <header class="header">
@@ -396,6 +396,20 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+   const cursor=document.querySelector(".cursor");
+   document.addEventListener("mousemove",(e)=>{
+      let x=e.pageX;
+      let y=e.pageY;
+      cursor.style.top=y+"px";
+      cursor.style.left=x+"px";
+      // cursor.style.display="block";
+   });
+   // document.addEventListener("mousemove",()=>{
+   //    // cursor.style.display="none";
+   // });
+</script>
 
 <script>
    // imgslide

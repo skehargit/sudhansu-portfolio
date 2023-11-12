@@ -44,6 +44,20 @@
    text-decoration: none;
    color:var(--text-color);
 }
+.cursor{
+   z-index: -1;
+   position: relative;
+   background: var(--main-color);
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   pointer-events: none;
+   box-shadow: 0 1px 10px var(--main-color),
+               0 5px 40px var(--main-color),
+               0 10px 60px var(--main-color),
+               0 0 100px var(--main-color);
+
+}
 
 html{
    font-size: 62.5%;
