@@ -417,11 +417,11 @@ section{
 .tools{
    display: flex;
    align-items: center;
-   padding: 0 20px;
+   padding: 20px 0;
 
 }
 .tools i{
-   padding-left: 5px;
+   padding-right: 10px;
    font-size: 20px;
 }
 .card__text{
@@ -462,7 +462,7 @@ section{
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   height: 220px;
+   min-height: 250px;
  }
  
  .card__img {
@@ -481,6 +481,8 @@ section{
  }
  
  .card__description {
+   /* height: 100px; */
+   /* border: 1px solid red; */
    font-family: 'Mukta', sans-serif;
 	font-size: 14px;
    text-align: left;
