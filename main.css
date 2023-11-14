@@ -887,3 +887,20 @@ section{
    }
 }
 
+.card__content{
+   --add-bottom: 50px;
+   padding-bottom: var(--add-bottom);
+}
+.card__content [class^="swiper-button-"]{
+   top: calc(50% - var(--add-bottom) / 2);
+}
+/* .card__content [class^="swiper-button-"]::after{
+   font-size: 30px;
+   width: 100px;
+} */
+.card__content .swiper-wrapper{
+   width: 90vw;
+   
+   /* display: block; */
+   margin: 0 auto;
+}
