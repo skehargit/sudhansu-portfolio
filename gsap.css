@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Tilt+Prism&display=swap');
+#main-container{
+  /* width: 100vw;
+  height: 100vh; */
+  position: relative;
+  top: 0px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.loader{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg,rgb(8, 112, 48),rgb(0,0,0));
+  width: 100vw;
+  height: 100vh;
+}
+
+#lodig-h1{
+    font-family: 'Kalam', cursive;
+  position: relative;
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.loader .text{
+  overflow: hidden;
+}
+
+.line-container{
+  position: relative;
+  width: 450px;
+  height: 6px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.line{
+  position: absolute;
+  width: 450px;
+  height: 6px;
+  background: white;
+  right: 0;
+  overflow: hidden;
+}
