@@ -919,7 +919,7 @@ section{
    display: flex;
    align-items: center;
    justify-content: center;
-   height: 50vh;
+   /* height: 50vh; */
    /* background: #111; */
    flex-direction: column;
    /* border: 2px solid var(--main-color); */
@@ -930,7 +930,7 @@ section{
 .scroll{
    position: relative;
    display: flex;
-   width: 80%;
+   width: 70%;
    overflow: hidden;
    -webkit-mask-image: linear-gradient(90deg,transparent,#fff 20%,#fff 80%,transparent);
 }
