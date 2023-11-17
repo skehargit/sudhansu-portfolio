@@ -44,21 +44,6 @@
    text-decoration: none;
    color:var(--text-color);
 }
-.cursor{
-   z-index: -1;
-   position: relative;
-   background: var(--main-color);
-   width: 10px;
-   height: 10px;
-   border-radius: 50%;
-   pointer-events: none;
-   box-shadow: 0 1px 10px var(--main-color),
-               0 5px 40px var(--main-color),
-               0 10px 60px var(--main-color),
-               0 0 100px var(--main-color);
-
-}
-
 html{
    font-size: 62.5%;
    overflow-x: hidden;
@@ -216,7 +201,7 @@ section{
 .header.active{
    left: 0;
 }
- /* =============home============ */
+ /* ============= Home Start ============ */
 .home{
    display: flex;
    align-items: center;
@@ -304,7 +289,9 @@ section{
    display: flex;
    justify-content: center;
 }
-/* =============education==========*/
+ /* ============= Home End ============ */
+
+/* ============= Education Start ==========*/
 .education .box-container{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(15rem, auto));
@@ -314,7 +301,6 @@ section{
 .education .box-container .box{
    padding:2rem 1rem;
    border-radius: 10px;
-   /* height: 150px; */
    background-color: rgba(1, 32, 13, 0.484);
    transition: all .30s ease;
 }
@@ -347,7 +333,9 @@ section{
 .education .box-container .box:hover h3{
    color: var(--main-color);
 }
-/* =============skills============= */
+/* ============= Education End ==========*/
+
+/* ============= Skills Start ============= */
 
 .skills .box-container{
    display: grid;
@@ -358,7 +346,6 @@ section{
 
 .skills .box-container .box{
    padding:2rem 1rem;
-   /* border: 1px solid var(--main-color); */
    border-radius: 10px;
    background-color: rgba(1, 32, 13, 0.484);
    transition: all .30s ease;
@@ -372,7 +359,6 @@ section{
    margin-top: 3rem;
    padding:2rem 1rem;
    margin-bottom: 2rem;
-   /* border: 1px solid var(--main-color); */
    background-color: rgba(1, 32, 13, 0.484);
    border-radius: 10px;
    transition: all .30s ease;
@@ -396,7 +382,6 @@ section{
 
 .skills .box-container .box p{
    font-size: 1.8rem;
-   /* transition: all .30s ease; */
 }
 
 .skills .box-container .box:hover{
@@ -411,8 +396,9 @@ section{
 .skills .box-container .box:hover p{
    color: var(--main-color);
 }
+/* ============= Skills End ============= */
 
-/* =============project============= */
+/* ============= Project Start ============= */
 
 .tools{
    display: flex;
@@ -534,57 +520,111 @@ section{
  .swiper-pagination-bullet-active {
    background-color: var(--second-color);
  }
-/* =============interest============= */
-
-.interest-container{
+ .card__content{
+   --add-bottom: 50px;
+   padding-bottom: var(--add-bottom);
+}
+.card__content [class^="swiper-button-"]{
+   top: calc(50% - var(--add-bottom) / 2);
+}
+.card__content .swiper-wrapper{
+   width: 90vw;
+   margin: 0 auto;
+}
+.allProject-button{
    display: flex;
-}
-
-.befor_after_text {
-   width: 450px;
-   font-size: 1.5rem;
-   text-align: center;
-   /* border-bottom: 10px double var(--main-color); */
-   border-bottom: 2px solid var(--main-color);
-}
-.interest_text{
-   font-size: 2rem;
-   margin-bottom: 10px;
-}
-.befor_after_container img {
-   width: 200px;
-   height: 300px;
-   margin: 10px;
-   border: 5px solid var(--main-color);
-   transition-duration: 2s;
-}
-
-.befor_after_container img:hover {
-   border: 5px solid yellow;
-   transform: scale(1.1);
-   filter: none;
-}
-.befor_after_container {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
    align-items: center;
-}
-.img-1-1{
-   position: absolute;
-   opacity: 0;
-}
-.img-1:hover .img-1-2{
-   opacity: 0;
-
-}
-.img-1:hover .img-1-1{
-   opacity: 100;
+   justify-content: center;
+   padding: 10px;
 }
 
+ /* ============= Project End ============= */
 
+/* ============= Interest Start ============= */
+/* === infinity scrolling ===*/
+.infinity-scroller{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 95%;
+   flex-direction: column;
+   padding: 20px;
+   border-left: none;
+   border-right: none;
+}
+.scroll{
+   display: flex;
+   width: 100%;
+   overflow: hidden;
+   -webkit-mask-image: linear-gradient(90deg,transparent,#fff 20%,#fff 80%,transparent);
+}
+.scroll div{
+   white-space: nowrap;
+   animation: animate var(--t) linear infinite;
+   animation-delay: calc(var(--t)*-1);
+}
+.scroll div:nth-child(2){
+   animation: animate2 var(--t) linear infinite;
+   animation-delay: calc(var(--t)/-2);
+}
+@keyframes animate{
+   0%{
+       transform: translateX(100%);
+   }
+   100%{
+       transform: translateX(-100%);
+   }
+}
+@keyframes animate2{
+   0%{
+       transform: translateX(0);
+   }
+   100%{
+       transform: translateX(-200%);
+   }
+}
+.scroll div span{
+   display: inline-flex;
+   margin: 10px;
+   background: rgba(1, 32, 13, 0.484);
+   text-transform: uppercase;
+   letter-spacing: 0.2em;
+   color: #fff;
+   font-size: 12px;
+   padding: 5px 10px;
+   border-radius: 5px;
+   transition: 0.5s;
+}
+.scroll div span:hover{
+   background: var(--main-color);
+   cursor: pointer;
+   box-shadow:  0 0 1px var(--main-color) ,
+                0 0 2px var(--main-color),
+                0 0 4px var(--main-color),
+                0 0 8px var(--main-color),
+                0 0 16px var(--main-color);
+}
+.imgbx img{
+width:100px;
+height: 100px;
+scale: 0.8;
+}
+.interest hr{
+   border: 1px solid var(--main-color);
+   width: 50%;
+   margin: 0 auto;
 
-/* =============contact============= */
+}
+.interest{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+/* ============= Interest End ============= */
+
+/* ============= Contact Start============= */
 
 .contact{
    display: flex;
@@ -604,13 +644,11 @@ section{
 }
 .contact-box{
    width: 80%;
-   /* color: #ffffff; */
    display: flex;
+   justify-content: space-evenly;
    background-color: rgba(1, 32, 13, 0.484);
    border-radius: 5px;
    padding: 20px;
-   /* height: 100px; */
-   /* border: 1px solid red; */
 }
 .contact .box-container img{
    width: 300px;
@@ -655,6 +693,7 @@ section{
 }
 .contact-box p{
    font-size: 2rem;
+   padding: 10px;
 }
 .social-link{
    display: flex;
@@ -664,7 +703,6 @@ section{
    padding: 20px;
 }
 .social-media{
-   /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -675,33 +713,10 @@ section{
    margin:0 1rem;
    cursor: pointer;
 }
-.form-horizontal{
-   margin: 30px;
-}
- .form-control, 
- textarea {
-   border: 1px solid var(--main-color);
-   width: 400px;
-   background-color: #000;
-   border-radius: 10px;
-   margin: 5px;
-   padding: 10px;
-   color: #fff;
-   letter-spacing: 1px;
- }
- 
- .send-button {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 34px;
-   /* margin-bottom: 10px; */
-   width: 400px;
-   overflow: hidden;
-   font-family: 'Source Sans Pro', sans-serif;
-   transition: all .2s ease-in-out;
- }
 
+/* ============= Contact End ============= */
+
+/* ============= Credit Start ============= */
 .credit-box{
    padding: 0;
    overflow: hidden;
@@ -721,6 +736,9 @@ section{
    color: rgb(255, 255, 255);
    margin-left: 10px;
 }
+/* ============= Credit End ============= */
+
+/* ============= Go to Top Start ============= */
 #go-top{
    position: fixed;
    height: 40px;
@@ -761,10 +779,10 @@ section{
    border-bottom: none;
 }
 
+/* ============= Go to Top End ============= */
 
-     /* =========== media queries ========== */
 
-
+/* =========== Media Queries ========== */
 @media (max-width:991px){
    .wrapper{
       display: none;
@@ -848,8 +866,6 @@ section{
       border-bottom:3px solid  var(--main-color);
    }
    
-   
-
 }
 
 @media (max-width:460px){
@@ -865,8 +881,6 @@ section{
    .contact .box-container{
       width: 700px;
    }
-   
-   
    
 }
 @media (max-width:640px){
@@ -889,114 +903,3 @@ section{
    
 }
 
-.card__content{
-   --add-bottom: 50px;
-   padding-bottom: var(--add-bottom);
-}
-.card__content [class^="swiper-button-"]{
-   top: calc(50% - var(--add-bottom) / 2);
-}
-/* .card__content [class^="swiper-button-"]::after{
-   font-size: 30px;
-   width: 100px;
-} */
-.card__content .swiper-wrapper{
-   width: 90vw;
-   
-   /* display: block; */
-   margin: 0 auto;
-}
-.allProject-button{
-   
-   /* margin: 0 auto; */
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 10px;
-   /* border: 1px solid red; */
-}
-
-/* ============ infinity scrolling */
-.infinity-scroller{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 95%;
-   /* height: 50vh; */
-   /* background: #111; */
-   flex-direction: column;
-   /* border: 2px solid var(--main-color); */
-   padding: 20px;
-   border-left: none;
-   border-right: none;
-}
-.scroll{
-   /* position: relative; */
-   display: flex;
-   width: 100%;
-   overflow: hidden;
-   -webkit-mask-image: linear-gradient(90deg,transparent,#fff 20%,#fff 80%,transparent);
-}
-.scroll div{
-   white-space: nowrap;
-   animation: animate var(--t) linear infinite;
-   animation-delay: calc(var(--t)*-1);
-}
-.scroll div:nth-child(2){
-   animation: animate2 var(--t) linear infinite;
-   animation-delay: calc(var(--t)/-2);
-}
-@keyframes animate{
-   0%{
-       transform: translateX(100%);
-   }
-   100%{
-       transform: translateX(-100%);
-   }
-}
-@keyframes animate2{
-   0%{
-       transform: translateX(0);
-   }
-   100%{
-       transform: translateX(-200%);
-   }
-}
-.scroll div span{
-   display: inline-flex;
-   margin: 10px;
-   background: rgba(1, 32, 13, 0.484);
-   text-transform: uppercase;
-   letter-spacing: 0.2em;
-   color: #fff;
-   font-size: 12px;
-   padding: 5px 10px;
-   border-radius: 5px;
-   transition: 0.5s;
-}
-.scroll div span:hover{
-   background: var(--main-color);
-   cursor: pointer;
-   box-shadow:  0 0 1px var(--main-color) ,
-                0 0 2px var(--main-color),
-                0 0 4px var(--main-color),
-                0 0 8px var(--main-color),
-                0 0 16px var(--main-color);
-}
-.imgbx img{
-width:100px;
-height: 100px;
-scale: 0.8;
-}
-.interest hr{
-   border: 1px solid var(--main-color);
-   width: 50%;
-   margin: 0 auto;
-
-}
-.interest{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-}
