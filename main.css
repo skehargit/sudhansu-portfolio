@@ -848,6 +848,7 @@ section{
       border-bottom:3px solid  var(--main-color);
    }
    
+   
 
 }
 
@@ -885,6 +886,7 @@ section{
    .interest-text{
       margin-top: 30px;
    }
+   
 }
 
 .card__content{
@@ -919,6 +921,7 @@ section{
    display: flex;
    align-items: center;
    justify-content: center;
+   width: 95%;
    /* height: 50vh; */
    /* background: #111; */
    flex-direction: column;
@@ -928,9 +931,9 @@ section{
    border-right: none;
 }
 .scroll{
-   position: relative;
+   /* position: relative; */
    display: flex;
-   width: 70%;
+   width: 100%;
    overflow: hidden;
    -webkit-mask-image: linear-gradient(90deg,transparent,#fff 20%,#fff 80%,transparent);
 }
@@ -990,4 +993,10 @@ scale: 0.8;
    width: 50%;
    margin: 0 auto;
 
+}
+.interest{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
 }
