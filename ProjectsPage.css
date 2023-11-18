@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.projects-box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+#project{
+    margin: 0;
+}
+@media(max-width:991px){
+    .projects-box{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:640px){
+    .projects-box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* @media (max-width:460px) {
+    .projects-box{
+        grid-template-columns: repeat(1,1fr);
+    }
+} */
