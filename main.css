@@ -60,7 +60,7 @@ section{
    padding:3rem 2rem;
    margin: 0 0 0 30rem;
    text-align: center;
-   
+   cursor: url("img/cursor.png"),pointer;
 }
 
 .heading{
@@ -82,7 +82,7 @@ section{
 .btn{
    display: inline-block;
    margin-top: 1rem;
-   cursor: pointer;
+   /* cursor: url("img/hand.png"),pointer; */
    padding:1rem 3rem;
    border: 1px solid var(--main-color);
    font-size: 2rem;
