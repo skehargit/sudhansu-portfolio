@@ -36,7 +36,10 @@
 
 .line-container{
   position: relative;
-  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
   height: 6px;
   overflow: hidden;
   border-radius: 10px;
@@ -44,9 +47,9 @@
 
 .line{
   position: absolute;
-  width: 450px;
+  width: 50%;
   height: 6px;
   background: white;
-  right: 0;
+  right: 25%;
   overflow: hidden;
 }
