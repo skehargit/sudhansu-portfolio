@@ -46,7 +46,6 @@
    -webkit-tap-highlight-color: rgba(0,0,0,0)!important;
     -webkit-focus-ring-color:rgba(255,255,255,0);
     outline: none !important;
-    /* -webkit-tap-highlight-color:transparent !important; */
 }
 html{
    font-size: 62.5%;
@@ -66,7 +65,6 @@ section{
    text-align: center;
    cursor: url("img/cursor.png"),pointer;
 }
-
 .heading{
    margin-bottom: 5rem;
    text-align: center;
@@ -86,7 +84,6 @@ section{
 .btn{
    display: inline-block;
    margin-top: 1rem;
-   /* cursor: url("img/hand.png"),pointer; */
    padding:1rem 3rem;
    border: 1px solid var(--main-color);
    font-size: 2rem;

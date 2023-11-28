@@ -1,8 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Tilt+Prism&display=swap');
 #main-container{
-  /* width: 100vw;
-  height: 100vh; */
   position: relative;
   top: 0px;
   flex-direction: column;
@@ -28,7 +26,7 @@
     font-family: 'Kalam', cursive;
   position: relative;
   color: white;
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 500;
 }
 
@@ -38,7 +36,7 @@
 
 .line-container{
   position: relative;
-  width: 450px;
+  width: 80vw;
   height: 6px;
   overflow: hidden;
   border-radius: 10px;
