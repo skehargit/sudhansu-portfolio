@@ -668,7 +668,7 @@ scale: 0.8;
 .Scanner-logo{
    width: 100px;
    height: 100px;
-   background-image: url('portfolio-dp1.jpg');
+   background-image: url('img/portfolio-dp1.jpg');
    background-position: center;
    background-size: cover;
    border: 2px solid var(--main-color);
