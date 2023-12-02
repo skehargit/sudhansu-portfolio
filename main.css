@@ -545,10 +545,9 @@ section{
 /* +++ all projects+++ */
 .category{
    position: relative;
-   /* border: 1px solid red; */
    margin-bottom: 20px;
-   display: flex;
-   align-items: center;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
    gap: 20px;
 }
 .category button{
