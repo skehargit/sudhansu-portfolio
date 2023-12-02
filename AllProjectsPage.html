@@ -16,12 +16,21 @@
 
    <!-- aos css link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+   <!-- <style>
+      
+   </style> -->
 </head>
 <body>
     <section class="project" id="project">
         <h1 class="heading" data-aos="fade-up"> <span>All Projects</span> </h1>
+        <div class="category">
+         <button class="active" data-name="all">ALL</button>
+         <button data-name="js">JavaScript</button>
+         <button data-name="htmlcss">HTML/CSS</button>
+         <button data-name="react">React</button>
+        </div>
         <div class="projects-box" data-aos="fade-up">
-         <article class="card__article swiper-slide">
+         <article data-name="js" class="card__article swiper-slide">
             <div class="card__image">
                <img src="img/PixelFind.gif" alt="image" class="card__img">
             </div>
@@ -47,7 +56,7 @@
                </div>
             </div>
          </article>
-         <article class="card__article swiper-slide">
+         <article data-name="js" class="card__article swiper-slide">
             <div class="card__image">
                <img src="img/star background.gif" alt="image" class="card__img">
             </div>
@@ -73,7 +82,7 @@
                </div>
             </div>
          </article>
-         <article class="card__article swiper-slide">
+         <article data-name="js" class="card__article swiper-slide">
             <div class="card__image">
                <img src="img/carrace.gif" alt="image" class="card__img">
             </div>
@@ -99,7 +108,7 @@
                </div>
             </div>
          </article>
-         <article class="card__article swiper-slide">
+         <article data-name="htmlcss" class="card__article swiper-slide">
             <div class="card__image">
                <img src="img/infinitescroll.gif" alt="image" class="card__img">
             </div>
@@ -124,7 +133,7 @@
                </div>
             </div>
          </article>
-         <article class="card__article swiper-slide">
+         <article data-name="js" class="card__article swiper-slide">
             <div class="card__image">
                <img src="img/texttoemoji.gif" alt="image" class="card__img">
             </div>
@@ -150,7 +159,7 @@
                </div>
             </div>
          </article>
-         <article class="card__article swiper-slide">
+         <article data-name="htmlcss" class="card__article swiper-slide">
             <div class="card__image">
                <img src="img/surveypage.gif" alt="image" class="card__img">
             </div>
@@ -175,7 +184,7 @@
                </div>
             </div>
          </article>
-         <article class="card__article swiper-slide">
+         <article data-name="htmlcss" class="card__article swiper-slide">
             <div class="card__image">
                <img src="img/catphoto.gif" alt="image" class="card__img">
             </div>
@@ -200,7 +209,7 @@
                </div>
             </div>
          </article>
-            <article class="card__article swiper-slide">
+            <article data-name="js" class="card__article swiper-slide">
                 <div class="card__image">
                    <img src="img/random.gif" alt="image" class="card__img">
                 </div>
@@ -226,7 +235,7 @@
                    </div>
                 </div>
              </article>
-             <article class="card__article swiper-slide">
+             <article data-name="js" class="card__article swiper-slide">
                 <div class="card__image">
                    <img src="img/intenship.gif" alt="image" class="card__img">
                    <!-- <div class="card__shadow"></div> -->
@@ -253,7 +262,7 @@
                 </div>
              </article>
  
-             <article class="card__article swiper-slide">
+             <article data-name="react" class="card__article swiper-slide">
                 <div class="card__image">
                    <img src="img/calplus.gif" alt="image" class="card__img">
                    <!-- <div class="card__shadow"></div> -->
@@ -279,7 +288,7 @@
                 </div>
              </article>
 
-             <article class="card__article swiper-slide">
+             <article data-name="js" class="card__article swiper-slide">
                 <div class="card__image">
                    <img src="img/tictactoe.gif" alt="image" class="card__img">
                    <!-- <div class="card__shadow"></div> -->
@@ -305,7 +314,7 @@
                    </div>
                 </div>
              </article>
-             <article class="card__article swiper-slide">
+             <article data-name="react" class="card__article swiper-slide">
                 <div class="card__image">
                    <img src="img/img-2.png" alt="image" class="card__img">
                    <!-- <div class="card__shadow"></div> -->
@@ -331,7 +340,7 @@
                    </div>
                 </div>
              </article>
-             <article class="card__article swiper-slide">
+             <article data-name="htmlcss" class="card__article swiper-slide">
                 <div class="card__image">
                    <img src="img/art.png" alt="image" class="card__img">
                    <!-- <div class="card__shadow"></div> -->
@@ -357,7 +366,7 @@
                    </div>
                 </div>
              </article>
-             <article class="card__article swiper-slide">
+             <article data-name="js" class="card__article swiper-slide">
                <div class="card__image">
                   <img src="img/diceGame.gif" alt="image" class="card__img">
                </div>
@@ -393,6 +402,25 @@
            duration:800,
            delay:300
         });
+     </script>
+     <script>
+      const filterbtns=document.querySelectorAll(".category button");
+      const filterblebox=document.querySelectorAll(".card__article");
+      const filter=(e)=>{
+         // console.log(e.target);
+         document.querySelector(".active").classList.remove("active");
+         e.target.classList.add("active");
+         filterblebox.forEach(card=>{
+            // console.log(card);
+            card.classList.add("hide");
+            if(card.dataset.name===e.target.dataset.name ||e.target.dataset.name==="all"){
+               card.classList.remove("hide");
+            }
+         })
+      }
+      // console.log(filterbtns,filterblebox)
+      filterbtns.forEach(button=>button.addEventListener("click",filter));
+      
      </script>
 </body>
 </html>
