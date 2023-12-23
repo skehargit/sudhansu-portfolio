@@ -194,7 +194,7 @@ section{
    font-size: 3rem;
    margin:0 1rem;
    cursor: pointer;
-   transition: .6s linear !important;
+   transition: .5s linear !important;
 }
 
 .header .follow a:hover{
